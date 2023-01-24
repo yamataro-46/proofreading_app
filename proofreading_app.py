@@ -16,6 +16,7 @@ pr = "all"
 
 
 #----app----
+st.set_page_config(page_title="Proofreading App")
 st.title("学術論文 校正アプリ")
 
 

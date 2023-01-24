@@ -14,6 +14,12 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 #---------------------------------------------
 
+
+#os.system('git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git && cd mecab-ipadic-neologd && ./bin/install-mecab-ipadic-neologd -n -y -u -p $PWD')
+
+
+
+
 # 必要な関数群
 #--------------
 # 任意の確率和をしきい値にして正解が含まれるかの率
@@ -64,7 +70,7 @@ def regex_txt(text):
 
 # 入力テキストをtoken化
 def text_to_id(texts, vocab_dic):
-    mecab = MeCab.Tagger(r'-d "/mecab-ipadic-neologd"')
+    mecab = MeCab.Tagger('-d /mecab-ipadic-neologd')
     terms = []
     posList = []
     texts = regex_txt(texts).split('。')
