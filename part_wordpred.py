@@ -62,7 +62,7 @@ def regex_txt(text):
 def text_to_id(texts, vocab_dic):
     mecab = MeCab.Tagger()
     # r'-d "/mecab-ipadic-neologd"'
-    # '-r /dev/null -d "/mecab-ipadic-neologd/"'
+
     terms = []
     posList = []
     texts = regex_txt(texts).split('。')
@@ -234,7 +234,7 @@ def miss_check(method_acc, pred, label, test_texts, vocab_dic, dic_vocab):
     falIndex = falIndex[:, 0]
     # print('正解率: ', acc.numpy())
     # print()
-    result += '正解率: ' + str(acc.numpy()) + '\n'
+    #result += '正解率: ' + str(acc.numpy()) + '\n'
     
     if falIndex.size == 0:
         # print('誤りは検出されませんでした')

@@ -15,11 +15,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 #---------------------------------------------
 
 
-os.system('git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git && cd mecab-ipadic-neologd && ./bin/install-mecab-ipadic-neologd -n -y -u -p $PWD')
-
-
-
-
 # 必要な関数群
 #--------------
 # 任意の確率和をしきい値にして正解が含まれるかの率
@@ -70,8 +65,8 @@ def regex_txt(text):
 
 # 入力テキストをtoken化
 def text_to_id(texts, vocab_dic):
-    mecab = MeCab.Tagger('-d /mecab-ipadic-neologd')
-    # '-r /dev/null -d "/mecab-ipadic-neologd/"'
+    mecab = MeCab.Tagger()
+    # r'-d "/mecab-ipadic-neologd"
     terms = []
     posList = []
     texts = regex_txt(texts).split('。')
@@ -256,7 +251,7 @@ def miss_check(method_acc, pred, label, test_texts, vocab_dic, dic_vocab):
     acc, falIndex = method_acc(label, pred)
     # print('正解率: ', acc.numpy())
     # print()
-    result += '正解率: ' + str(acc.numpy()) + '\n'
+    #result += '正解率: ' + str(acc.numpy()) + '\n'
 
     for i in range(len(falIndex)):
         if falIndex[i].size == 0:
@@ -266,7 +261,7 @@ def miss_check(method_acc, pred, label, test_texts, vocab_dic, dic_vocab):
         else:
             # print('---誤字を検出---')
             # print()
-            result += '---誤字を検出---\n'
+            result += '---誤字・誤用を検出---\n'
             try:
                 for j in range(len(falIndex[i])):
                     fi = falIndex[i][j]
