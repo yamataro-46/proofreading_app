@@ -60,7 +60,8 @@ def regex_txt(text):
 
 # 入力テキストをtoken化
 def text_to_id(texts, vocab_dic):
-    mecab = MeCab.Tagger('-r /dev/null -d /mecab-ipadic-neologd/')
+    mecab = MeCab.Tagger(r'-d "/mecab-ipadic-neologd/"')
+    # '-r /dev/null -d "/mecab-ipadic-neologd/"'
     terms = []
     posList = []
     texts = regex_txt(texts).split('。')
