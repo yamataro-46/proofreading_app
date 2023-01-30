@@ -52,7 +52,7 @@ st.sidebar.text("-----------------------------")
 st.sidebar.info('システムの概要・精度実験等について')
 link1 = '[抄録](https://drive.google.com/file/d/17tO7KbtiEa6mnB5xPfBaDeaW8X3qoTvG/view?usp=sharing)'
 st.sidebar.markdown(link1, unsafe_allow_html=True)
-link2 = '[本論(準備中)]()'
+link2 = '[本論](https://drive.google.com/file/d/13tm35RqOti55Eg92-QLQlJvVc84jL9yr/view?usp=sharing)'
 st.sidebar.markdown(link2, unsafe_allow_html=True)
 link3 = '[view app source](https://github.com/yamataro-46/proofreading_app)'
 st.sidebar.markdown(link3, unsafe_allow_html=True)
