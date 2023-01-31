@@ -43,7 +43,7 @@ A proofreading system for academic papers based on natural language processing.
 
 - [抄録](https://drive.google.com/file/d/17tO7KbtiEa6mnB5xPfBaDeaW8X3qoTvG/view?usp=share_link)
 
-- [本論](https://drive.google.com/file/d/13tm35RqOti55Eg92-QLQlJvVc84jL9yr/view?usp=sharing)
+- [本論](https://drive.google.com/file/d/1qZehMoyQJw8xENif3TLi9EzqkHETkaus/view?usp=sharing)
 
 
 
