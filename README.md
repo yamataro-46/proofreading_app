@@ -1,5 +1,6 @@
 # proofreading_app
 
+※ 有効ブランチをmaster -> main に変更しました
 自然言語処理に基づく学術論文の校正システム
 
 A proofreading system for academic papers based on natural language processing.
