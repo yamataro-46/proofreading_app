@@ -4,7 +4,7 @@
 
 A proofreading system for academic papers based on natural language processing.
 
-[Proofreading APP](https://yamataro-46-proofreading-app-proofreading-app-83bxdf.streamlit.app/)
+[Proofreading APP](https://ymd-py-proofreading.streamlit.app/)
 
 
 ## どんなシステム？
